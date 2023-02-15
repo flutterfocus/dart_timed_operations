@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Documentation udpate.
+
 ## 1.0.3
 
 - Pacakge metadata udpate.
