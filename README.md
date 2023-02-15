@@ -31,6 +31,7 @@ Throttle.sync<int>(
   onSuccess: (result) => print('Operation result: $result'),
   throttle: const Duration(milliseconds: 500),
 );
+```
 
 ### `Throttle.async()`
   /// Throttles the execution of an asynchronous operation and handles its result or errors
@@ -38,6 +39,7 @@ Throttle.sync<int>(
   /// the operation and avoid concurrent executions. The `operation` parameter is the
   /// asynchronous operation to be throttled, and `duration` is the duration of the
   /// throttling period.
+
 
 ```dart
 await Throttle.async<int>(
@@ -53,7 +55,7 @@ await Throttle.async<int>(
   duration: const Duration(milliseconds: 500),
   timeout: const Duration(seconds: 5),
 );
-
+```
 
 ### ❤️  Support Flutter Focus
 - 🚀 [Github Sponsors](https://github.com/sponsors/flutterfocus)
@@ -63,4 +65,3 @@ Flutter Focus offers bespoke services in multimedia storytelling by mixing Mobil
 
 [Find out more](https://flutterfocus.dev/services/).
 
-```
