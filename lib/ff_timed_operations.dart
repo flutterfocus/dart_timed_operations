@@ -192,11 +192,12 @@ class Debounce {
   /// Example usage:
   ///
   /// ```dart
-  /// sync<String>(
+  /// Deounce.sync<String>(
   ///   callId: 'my_call_id',
   ///   operation: fetchSomeData,
   ///   onSuccess: (data) => print('Got data: $data'),
   /// );
+  /// ```
   static void sync<T>({
     required String callId,
     required Function() operation,
@@ -235,7 +236,7 @@ class Debounce {
   /// Example usage:
   ///
   /// ```dart
-  /// async<String>(
+  /// Debounce.async<String>(
   ///   callId: 'my_call_id',
   ///   operation: fetchSomeData(),
   ///   onSuccess: (data) => print('Got data: $data'),

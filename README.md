@@ -32,7 +32,6 @@ Throttle.sync<int>(
   throttle: const Duration(milliseconds: 500),
 );
 ```
-
 ### `Throttle.async()`
 Throttles the execution of an asynchronous operation and handles its result or errors
 based on the given callback functions. The `callId` parameter is used to identify
@@ -54,6 +53,42 @@ await Throttle.async<int>(
   onSuccess: (result) => print('Operation result: $result'),
   duration: const Duration(milliseconds: 500),
   timeout: const Duration(seconds: 5),
+);
+```
+
+### `Debounce.sync()`
+Runs a synchronous operation with a debounce mechanism to limit multiple
+calls to the same operation. This method waits for a specified duration
+after a call with a specific `callId` has been made before running the
+operation.
+
+When the operation is complete, the `onSuccess` callback is called with the
+result. You can also provide optional callbacks to handle errors, waiting
+states, null and empty data.
+
+```dart
+Debounce.sync<String>(
+  callId: 'my_call_id',
+  operation: fetchSomeData,
+  onSuccess: (data) => print('Got data: $data'),
+);
+```
+
+### `Debounce.async()`
+Runs an asynchronous operation with a debounce mechanism to limit multiple
+calls to the same operation. This method waits for a specified duration
+after a call with a specific `callId` has been made before running the
+operation.
+
+When the operation is complete, the `onSuccess` callback is called with the
+result. You can also provide optional callbacks to handle errors, waiting
+states, null and empty data.
+
+```dart
+Debounce.async<String>(
+  callId: 'my_call_id',
+  operation: fetchSomeData(),
+  onSuccess: (data) => print('Got data: $data'),
 );
 ```
 
