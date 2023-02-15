@@ -1,5 +1,5 @@
 name: ff_dart_timed_operations
-description: A starting point for Dart libraries or applications.
+description: Tools to help with timed operations such as Debounce Throttle operations.
 version: 1.0.0
 repository: https://github.com/flutterfocus/dart_timed_operations.git
 
