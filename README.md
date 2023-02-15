@@ -34,11 +34,11 @@ Throttle.sync<int>(
 ```
 
 ### `Throttle.async()`
-  /// Throttles the execution of an asynchronous operation and handles its result or errors
-  /// based on the given callback functions. The `callId` parameter is used to identify
-  /// the operation and avoid concurrent executions. The `operation` parameter is the
-  /// asynchronous operation to be throttled, and `duration` is the duration of the
-  /// throttling period.
+Throttles the execution of an asynchronous operation and handles its result or errors
+based on the given callback functions. The `callId` parameter is used to identify
+the operation and avoid concurrent executions. The `operation` parameter is the
+asynchronous operation to be throttled, and `duration` is the duration of the
+throttling period.
 
 
 ```dart
