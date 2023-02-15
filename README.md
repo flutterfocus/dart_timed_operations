@@ -8,6 +8,11 @@ Timed Operations provides better handling of timed operations such as Debounce T
 Additionally, it provides optional callbacks to handle different states and
 outcomes, such as errors, waiting states, null or empty data, and successful completion of the operation.
 
+## Features
+- Debounce (async/sync)
+- Throttle (async/sync)
+- Extensive handling (optional)
+
 ## Usage
 
 ### `Throttle.sync()`
