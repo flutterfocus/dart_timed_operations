@@ -1,0 +1,14 @@
+name: ff_dart_timed_operations
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+repository: https://github.com/flutterfocus/dart_timed_operations.git
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  ff_trycatch: ^1.0.1
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0
